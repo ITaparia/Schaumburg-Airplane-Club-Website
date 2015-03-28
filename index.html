@@ -1,32 +1,152 @@
 <!DOCTYPE HTML>
 	<html lang = "en">
 		<head>
-			<script type = "text/javascript" src = "script.js"></script>
-			<link rel = "stylesheet" href = "style.css" />
+
+			
+			<script type = "text/javascript" src = "js/script.js"></script>
+			<script rel = "text/javascript" src="js/jquery-1.11.1.js"></script>
+			<script type="text/javascript" src="js/smoothscroll.js"></script>
+			
+			<link rel = "stylesheet" href = "css/style.css" />
+			
+			<title>Schaumburg Flying Club</title>
 		</head>
 		<body>
 			
 			<!-- Heading Images -->
 			
 			<img src = "img/topPhotowithBar.jpg" id = "top_image"/>
-			<img src = "img/SFClogoWhite.png" id = "logo_image" />
+			<span id = "repo_image"><img src = "img/SFClogoWhite.png" id = "logo_image" /></span>
 			
 			<!-- End Heading Images -->
 			
 			<!-- Navigation Elements -->
 			
-			<span id = "position_nav_box">
-				
+			<div id = "reposition">
 				<div id = "navigation_elements">
-					<div id = "nav">ABOUT<span id = "position_slash">/</span></div>
-					<div id = "nav">PLANES<span id = "position_slash">/</span></div>
-					<div id = "nav">FAQ<span id = "position_slash">/</span></div>
-					<div id = "nav">LINKS<span id = "position_slash">/</span></div>
-					<div id = "nav">JOIN</div>
+					<div id = "nav"><a href = "#about_content" class = "smoothScroll">ABOUT</a><span id = "position_slash">/</span></div>
+					<div id = "nav"><a href = "#our_aircraft" class = "smoothScroll">PLANES</a><span id = "position_slash">/</span></div>
+					<div id = "nav"><a href = "#anchor_faq" class = "smoothScroll">FAQ</a><span id = "position_slash">/</span></div>
+					<div id = "nav"><a href = "#anchor_links" class = "smoothScroll">LINKS</a><span id = "position_slash">/</span></div>
+					<div id = "nav"><a href = "#anchor_join" class = "smoothScroll">JOIN</a></div>
 				</div>
-			
-			</span>
+			</div>
 			
 			<!-- End Navigation Elements -->
+			
+			<!-- Top Menu Elements -->
+			
+			<div id = "join_button">JOIN THE CLUB</div>
+			<div id = "meeting_bar"><span class = "lighten">Next Meeting</span> 7:30 MARCH 12TH <span class = "lighten">AT</span> GO FUCK YOURSELF</div>
+			
+			<!-- End Top Menu Elements -->
+			
+			<!-- About Content -->
+			
+			<div id = "about_content">
+				<span class = "blue">The Schaumburg Flying club</span> <span class = "darken">is a not-for-profit group of aviation enthusiasts who proudly own and operate two late-model Cessna aircraft.</span>
+				<br />
+				<br />
+			
+			
+				The Schaumburg Flying Club is a not-for-profit group of aviation enthusiasts who proudly own and operate two late-model Cessna aircraft.  We're based at the centrally located Schaumburg Regional Airport (06C), located just outside of Chicago, IL.   The SFC is committed to maintaining a safe fleet of aircraft at reasonable prices.  We comply with all ADs and Service Bulletins, and our members perform routine maintenance regularly.  And all of our members are fully insured under our club's policy - you won't need to pay for "renter's" insurance.  Club members can check aircraft availability and make reservations over the Internet or by telephone in just seconds. We fly for vacation, business, earning advanced ratings, or just a hamburger. We're committed to keeping a safe fleet that's affordable to fly. 
+		
+				<br />
+				<br />
+				We are looking for new members.  If you're interested and want more information, <span class = "link">click here!</span>
+			
+			<!-- End About Content -->
+			
+			<!-- Aircraft Content -->
+			
+			<hr id = "first_hr" /> <div id = "our_aircraft">OUR AIRCRAFT</div> <hr id = "second_hr" />
+			<span id = "stars_image"><img src = "img/stars.png" /></span>
+			
+			<div id = "small_header">We proudly own and operate two late-model Cessna aircraft</div>
+			
+            
+            <section id = "plane_one">
+                <div id="one">
+                    <img src="img/plane_one.jpg" width=100% height=100%>
+                </div>
+                
+                <div id="two">
+                    <p id="plane_one_info">
+                        <span style="font-size:20px;" class="darken">1999 CESSNA SKYLANE</span>
+                        <br /><br />
+                        <span class="darken">182S (N334SA)</span>
+                        <br /><br /><br />
+                        * 143KTAS at 7,500
+                        <br /><br />
+                        * 1,135 lb. useful load
+                        <br /><br />
+                        * 88 Gal Tanks
+                        <br /><br />
+                        * 230 Horsepower, constant-speed propeller
+                        <br /><br />
+                        * Approach Certified KLN 89B with Current Database
+                        <br /><br />
+                        * Two-axis KAP-140Autopilot
+                        <br /><br />
+                        * Reiff electric pre-heater
+                        <br /><br />
+                        * EDM-700 Engine Monitor
+                        <br /><br />
+                        * A Great IFR Cross-Country Platform!
+                        <br /><br />
+                        <span class = "blue">* Rate $128/hr Hobbs, wet</span>
+                    </p>
+                </div>
+            </section>
+                
+            <section id="plane_two">
+                <div id = "three">
+                    <img src="img/plane_two.JPG" width=100% height=100%>
+                </div>
+                
+                <div id = "four">
+                    <p id="plane_two_info">
+                        <span style="font-size:20px;" class="darken">1999 CESSNA SKYHAWK</span>
+                        <br /><br />
+                        <span class="darken">172S (N309SP)</span>
+                        <br /><br /><br />
+                        * 1243KTAS at 8,500
+                        <br /><br />
+                        * 920 lb. useful load
+                        <br /><br />
+                        * 56 Gal Tanks
+                        <br /><br />
+                        * 180 Horsepower, fixed pitch propeller
+                        <br /><br />
+                        * Approach Certified KLN 89B with Current Database
+                        <br /><br />
+                        * Single-axis KAP-140Autopilot
+                        <br /><br />
+                        * Electric pre-heater
+                        <br /><br />
+                        * EDM-700 Engine Monitor
+                        <br /><br />
+                        <span class = "blue">* Rate $104/hr Hobbs, wet</span>
+                    </p>
+                </div>
+            </section>
+
+    
+			<!-- End Aircraft Content --> 
+			
+			
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br />
+        </div>
 		</body>
-	</html>
+		</html>
