@@ -11,7 +11,6 @@ html, body {
 	margin:0px;
 	padding:0px;
 	font-family: 'Avenir Next W01', 'Avenir Next', 'Proxima Nova', 'Myriad Pro', Helvetica, Calibri, sans-serif;
-
 }
 
 a
@@ -84,7 +83,7 @@ a:hover
 
 #reposition
 {
-	
+
 }
 
 #first_hr
@@ -345,11 +344,12 @@ a:hover
 }
 
 section#plane_one{
-    width: 166%;
+    width: 166.5%;
     height: 450px;
     background: aqua;
     margin-top: 200px;
-    margin-left:-33%;
+    margin-left:-33.5%;
+    overflow: hidden;
 }
 div#one {
     width: 60%;
@@ -365,11 +365,12 @@ div#two {
 }
 
 section#plane_two {
-    width: 166%;
+    width: 166.5%;
     height: 450px;
     background: aqua;
     margin-top: 2px;
-    margin-left: -33%;
+    margin-left: -33.5%;
+    overflow: hidden;
 }
 
 div#three {
