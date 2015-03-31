@@ -1314,10 +1314,6 @@ a:hover
 
 /* About Content */
 
-#about_content_wrap
-{
-	
-}
 
 #about_content
 {
@@ -1367,6 +1363,11 @@ a:hover
 	width:250px;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+#aircraft_content {
+    width:100%;
+    margin-top: 700px;
 }
 
 section#plane_one{
@@ -1441,6 +1442,11 @@ p#plane_two_info
     font-size: 11px;
 }
 
+#wrap_aircraft_content {
+    width:100%;
+    margin-left: 0%;
+       
+}
 /* End Aircraft Content */
 
 /* FAQ Content */
