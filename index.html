@@ -2,7 +2,7 @@
 	<html lang = "en">
 		<head>
 
-			
+			<meta name="viewport" content="user-scalable=no"/>
 			<script type = "text/javascript" src = "js/script.js"></script>
 			<script rel = "text/javascript" src="js/jquery-1.11.1.js"></script>
 			<script type="text/javascript" src="js/smoothscroll.js"></script>
@@ -26,7 +26,7 @@
 				<div id = "navigation_elements">
 					<div id = "nav"><a href = "#about_content" class = "smoothScroll">ABOUT</a><span id = "position_slash">/</span></div>
 					<div id = "nav"><a href = "#our_aircraft" class = "smoothScroll">PLANES</a><span id = "position_slash">/</span></div>
-					<div id = "nav"><a href = "#anchor_faq" class = "smoothScroll">FAQ</a><span id = "position_slash">/</span></div>
+					<div id = "nav"><a href = "#faq_header" class = "smoothScroll">FAQ</a><span id = "position_slash">/</span></div>
 					<div id = "nav"><a href = "#anchor_links" class = "smoothScroll">LINKS</a><span id = "position_slash">/</span></div>
 					<div id = "nav"><a href = "#anchor_join" class = "smoothScroll">JOIN</a></div>
 				</div>
@@ -35,7 +35,7 @@
 			<!-- End Navigation Elements -->
 			
 			<!-- Top Menu Elements -->
-			
+			<span id = "about_content_wrap">
 				
 				<div id = "join_button">JOIN THE CLUB</div>
 				<div id = "meeting_bar"><span class = "lighten">Next Meeting</span> 7:30 MARCH 12TH <span class = "lighten">AT</span> O6C</div>
@@ -55,13 +55,11 @@
 					<br />
 					<br />
 					We are looking for new members.  If you're interested and want more information, <span class = "link">click here!</span>
-                    
-			
-            
+			</span>
 			<!-- End About Content -->
 			
 			<!-- Aircraft Content -->
-			<div id="wrap_aircraft_content">
+			
 			<hr id = "first_hr" /> <div id = "our_aircraft">OUR AIRCRAFT</div> <hr id = "second_hr" />
 			<span id = "stars_image"><img src = "img/stars.png" /></span>
 			
@@ -74,31 +72,33 @@
                 </div>
                 
                 <div id="two">
-                    <p id="plane_one_info">
-                        <span style="font-size:20px;" class="darken">1999 CESSNA SKYLANE</span>
-                        <br /><br />
-                        <span class="darken">182S (N334SA)</span>
-                        <br /><br /><br />
-                        * 143KTAS at 7,500
-                        <br /><br />
-                        * 1,135 lb. useful load
-                        <br /><br />
-                        * 88 Gal Tanks
-                        <br /><br />
-                        * 230 Horsepower, constant-speed propeller
-                        <br /><br />
-                        * Approach Certified KLN 89B with Current Database
-                        <br /><br />
-                        * Two-axis KAP-140Autopilot
-                        <br /><br />
-                        * Reiff electric pre-heater
-                        <br /><br />
-                        * EDM-700 Engine Monitor
-                        <br /><br />
-                        * A Great IFR Cross-Country Platform!
-                        <br /><br />
-                        <span class = "blue">* Rate $128/hr Hobbs, wet</span>
-                    </p>
+	                    <span id = "info_one_repo">
+							<p id="plane_one_info">
+		                        <span style="font-size:20px;" class="darken">1999 CESSNA SKYLANE</span>
+		                        <br /><br />
+		                        <span class="darken">182S (N334SA)</span>
+		                        <br /><br /><br />
+		                        * 143KTAS at 7,500
+		                        <br /><br />
+		                        * 1,135 lb. useful load
+		                        <br /><br />
+		                        * 88 Gal Tanks
+		                        <br /><br />
+		                        * 230 Horsepower, constant-speed propeller
+		                        <br /><br />
+		                        * Approach Certified KLN 89B with Current Database
+		                        <br /><br />
+		                        * Two-axis KAP-140Autopilot
+		                        <br /><br />
+		                        * Reiff electric pre-heater
+		                        <br /><br />
+		                        * EDM-700 Engine Monitor
+		                        <br /><br />
+		                        * A Great IFR Cross-Country Platform!
+		                        <br /><br />
+		                        <span class = "blue">* Rate $128/hr Hobbs, wet</span>
+	                    	</p>
+					</span>
                 </div>
             </section>
                 
@@ -108,36 +108,39 @@
                 </div>
                 
                 <div id = "four">
-                    <p id="plane_two_info">
-                        <span style="font-size:20px;" class="darken">1999 CESSNA SKYHAWK</span>
-                        <br /><br />
-                        <span class="darken">172S (N309SP)</span>
-                        <br /><br /><br />
-                        * 1243KTAS at 8,500
-                        <br /><br />
-                        * 920 lb. useful load
-                        <br /><br />
-                        * 56 Gal Tanks
-                        <br /><br />
-                        * 180 Horsepower, fixed pitch propeller
-                        <br /><br />
-                        * Approach Certified KLN 89B with Current Database
-                        <br /><br />
-                        * Single-axis KAP-140Autopilot
-                        <br /><br />
-                        * Electric pre-heater
-                        <br /><br />
-                        * EDM-700 Engine Monitor
-                        <br /><br />
-                        <span class = "blue">* Rate $104/hr Hobbs, wet</span>
-                    </p>
+					<span id = "info_two_repo">
+	                    <p id="plane_two_info">
+	                        <span style="font-size:20px;" class="darken">1999 CESSNA SKYHAWK</span>
+	                        <br /><br />
+	                        <span class="darken">172S (N309SP)</span>
+	                        <br /><br /><br />
+	                        * 1243KTAS at 8,500
+	                        <br /><br />
+	                        * 920 lb. useful load
+	                        <br /><br />
+	                        * 56 Gal Tanks
+	                        <br /><br />
+	                        * 180 Horsepower, fixed pitch propeller
+	                        <br /><br />
+	                        * Approach Certified KLN 89B with Current Database
+	                        <br /><br />
+	                        * Single-axis KAP-140Autopilot
+	                        <br /><br />
+	                        * Electric pre-heater
+	                        <br /><br />
+	                        * EDM-700 Engine Monitor
+	                        <br /><br />
+	                        <span class = "blue">* Rate $104/hr Hobbs, wet</span>
+	                    </p>
+					</span>
                 </div>
             </section>
-            </div>
-        
+		</span>
+		
 		<!-- End Aircraft Content -->
 		
 		<!-- FAQ Content --> 
+		
 		<span id = "faq_header">
 			FREQUENTLY ASKED QUESTIONS<br />
 			
@@ -148,79 +151,31 @@
 			
 			<div class="accordion">
 									<dl>
-										<dt><a class="accordionTitle" href="#" style = "background-color:#28ABE3;">What do the stages of cancer mean?</a></dt>
+										<dt onClick = "changeColor_one()"><a class="accordionTitle" href="#" id = "first_acor" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">What should I know before I join?</a></dt>
 										<dd class="accordionItem accordionItemCollapsed">
 											<p>
-												We often hear the term 'stage of cancer' being thrown around when discussing the development level of the cancer at the time of diagnosis. However, many lack an understanding for what each of the stages actually mean. The stages of cancer exist as a reference system through which doctors can plan <span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/factsheet/detection/staging')">an appropriate treatment plan and estimate a patient's prognosis</span>. There are 5 primary stages of cancer that are important to know.  
-												
-												<br />
-												<br />
-												
-												<span class = "slight_header">Stage O</span> - This is used to identify a cancer which is isolated to a singular place of origin. This means that the cancer <span class = "link" onClick = "window.open('http://www.cancer.net/navigating-cancer-care/diagnosing-cancer/stages-cancer')">has not invaded nearby tissue</span>. It is ideal to discover the cancer at this stage, as its static state of development often means that doctors have the opportunity to remove it through surgery before it becomes a larger issue. 
-												
-												<br />
-												<br />
-												
-												<span class = "slight_header">Stage I</span> - This stage of cancer is defined when the cancerous cells have <span class = "link" onClick = "window.open('http://www.cancer.net/navigating-cancer-care/diagnosing-cancer/stages-cancer')">begun to invade neighboring tissue</span>. While the disease is usually still under control at this point, this can often be a very frightening step, as it means that the cancer has the potential to threaten life. 
-												
-												<br />
-												<br /> 
-												
-												<span class = "slight_header">Stage II and Stage III</span> - These stages of cancer are declared when the cancer has begun to spread in the general region of the body in which it first developed but has not extended past this point. Surgery and Chemo or Radio therapies may be necessary at this point to prevent the disease from growing further. 
-												
-												<br />
-												<br /> 
-												
-												<span class = "slight_header">Stage IV</span> - This stage of cancer occurs when the cancer has spread to other locations in the body. It may enter the blood stream and form colonies at various points around the body. Cancer at this stage is sometimes described as being <span class = "link" onClick = "window.open('http://www.cancer.net/navigating-cancer-care/diagnosing-cancer/stages-cancer')">advanced or metastatic</span>. 
-												
-							</p>
-										</dd>
-										
-										<dt><a class="accordionTitle" href="#" style = "background-color: #1FDA9A">How much does cancer treatment cost?</a></dt>
-										<dd class="accordionItem accordionItemCollapsed">
-											<p>
-												Cancer can be an incredibly expensive problem to deal with. While the <span class = "link" onClick = "window.open('http://costprojections.cancer.gov/annual.costs.html')">cost of care varies greatly</span> depending on the type and severity of the cancer, it is not uncommon for annual cost to be tens or even hundreds of thousands of United States dollars. Nearly everything associated with cancer treatment is expensive, and these towering expenses are the product of doctor visits, lab tests, chemo and radio therapy treatments, hospital visits, surgeries, <span class = "link" onClick = "window.open('http://www.cancer.org/treatment/findingandpayingfortreatment/managinginsuranceissues/the-cost-of-cancer-treatment')">and more</span>. 
-												<br />
-												<br />
-												Luckily, proper health insurance can do much to keep many of this financial burden from coming out of the patient's pocket. In fact, <span class = "link" onClick = "window.open('http://www.bankrate.com/finance/insurance/insuring-costs-cancer-1.aspx')">health insurance typically covers</span> medical expenses, doctor and hospital visits, and many forms of drugs and medications. 
-												
-												<br />
-												<br />
-												In summary, while the costs of cancer are tremendous, there do exist ways to keep this burden from being a distraction while the patient undergoes treatment. That said, it is a good idea to fully understand your insurance plan and its limits, as the consequences can be severe for the underprepared individual. 
-												
-												<br />
-												<br />
-												Cancer patients should be focused on getting better, not managing a complex financial situation in the face of disease. One of the best ways you can reduce the financial burden on cancer patients is to <span class = "link" onClick = "window.open('donate.html')">donate to charities associated with cancer treatments</span>, as many of them are involved with supporting tens of thousands of patients financially each and every year.
+												wow
 													
 	
 		 
 						</p>
 						</dd>
 										
-											<dt><a class="accordionTitle" href="#" style = "background-color: #DB3340">What are some terms to know?</a></dt>
+										<dt onClick = "changeColor_one()"><a class="accordionTitle" href="#" id = "first_acor" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">Are there any minimum time requirements to join?</a></dt>
 										<dd class="accordionItem accordionItemCollapsed">
 											<p>
-												It's not uncommon for medical terms to be thrown around when discussing cancer. While this site was written with the intention of being accessible to everybody, there are still some terms that are worth knowing in order to fully grasp the medical context of what cancer patients deal with everyday.
-											<br />
-											<br />
-											<span class = "slight_header">Chemotherapy</span> - The use of drugs to combat cancer and its side effects. Chemotherapy can be <span class = "link" onClick = "window.open('http://www.chemocare.com/chemotherapy/what-is-chemotherapy/what-is-chemotherapy-used-for.aspx#.VOeLrcaJmFI')">used for a variety of things</span>, including but not limited to: killing cancerous cells, preventing tumor growth, relieving symptoms, and shrinking tumors before surgury. 
-											<br />
-											<br />
-											<span class = "slight_header">Radiotherapy</span> - The use of high energy rays to treat cancer by <span class = "link" onClick = "window.open('http://www.macmillan.org.uk/Cancerinformation/Cancertreatment/Treatmenttypes/Radiotherapy/Generalinformation/Whatisit.aspx')">destroying mutated cells</span>. Although normal cells can sometimes be damaged through this practice, they can typically repair themselves. 
-											<br />
-											<br />
-											<span class = "slight_header">Metastasis</span> - The spread of cancer from the point of origin of the disease <span class = "link" onClick = "window.open('http://www.cancer.org/treatment/understandingyourdiagnosis/advancedcancer/advanced-cancer-what-is-metastatic')">to another location in the body</span>. The cancer is often much harder to contain once metastasis has occured. 
-											
-											<br />
-											<br />
-											<span class = "slight_header">Remission</span> - A cancer patient is in remission when cancer symptoms disapear or are reduced. This is referred to as partial remission and complete remission respectively. 
-											
-											
-											<br />
-											<br />
-											<span id = "hidden_link" class = "link" onClick = "window.open('http://kidshealth.org/kid/cancer_center/words_to_know/cancer_glossary.html?tracking=K_RelatedArticle')">To learn more about important terms, click here!</span>
+												wow
+													
+	
+		 
+						</p>
+						</dd>
 										
-											
+											<dt onClick = "changeColor_two()"><a id = "second_acor" class="accordionTitle" href="#" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">What does it cost?</a></dt>
+										<dd class="accordionItem accordionItemCollapsed">
+											<p>
+												wowwowwowwowwowwowwowwowwowwow wowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwow
+											wowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwowwow
 												
 												
 											
@@ -230,42 +185,73 @@
 									</div>
 								<div class="accordion2">
 									<dl>
-										<dt><a class="accordionTitle2" href="#memes" style = "background-color: #E8B71A;">How common is cancer?</a></dt>
+										<dt onClick = "changeColor_three()"><a id = "third_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">How do I join?</a></dt>
 										<dd class="accordionItem2 accordionItemCollapsed2">
 											<p>
-												Cancer is one of the most prominent diseases in our world today. <span class = "link" onClick = "window.open('http://www.who.int/mediacentre/factsheets/fs297/en/')">Fourteen million new cases</span> of cancer are diagnosed each year, with well over <span class = "link" onClick = "window.open('http://www.who.int/mediacentre/factsheets/fs297/en/')">eight million of those cases</span> resulting in death. In fact, someone died from cancer in the time it took for you to read this sentence. 
-												
-												
-											
-	                                            <br />
-	                                            <br />
-												While cancer may seem entirely random in who it strikes, there are some patterns which may someday guide us towards reducing the occurance rate of the disease. For instance, <span class = "link" onClick = "window.open('http://www.cancer.org/acs/groups/content/@epidemiologysurveilance/documents/document/acspc-027766.pdf')">around 78 percent of all cancer cases</span> in economically developed countries are in people over the age of 55. 
-												
-												<br />
-												<br />
-												<span id = "hidden_link">You can help right this wrong by clicking on the button below.</span>
-												
-												<br />
-												
-												<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('donate.html')">Donate</span>
+												wow
 											</p>
 										</dd>
-										<dt><a href="#memes" class="accordionTitle2" style = "background-color:#8258FA;">What does 5-year survival mean?</a></dt>
+										<dt onClick = "changeColor_four()"><a id = "fourth_acor" href="#memes" class="accordionTitle2" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">When are the meetings?</a></dt>
 										<dd class="accordionItem2 accordionItemCollapsed2">
 											<p>
-												The 5-year survival rate is a tool that doctors use to gauge how deadly a particular varient of cancer is. For instance, the <span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/types/lung/cancer-survival-prognosis')">5-year survival rate for lung cancer is 16 percent</span>. This means that 16 out of every 100 people survive 5 years or more after being diagnosed with their illness. This does not mean that the chances for survival for any particular individual are 16 percent: each case is different, and it is important to avoid applying blanket statistics such as these to indidual cases. 
-														
-												<br />
-												<br />
-												Surviving 5 years is an indication to many that the treatment has been effective and recovery is an option. One common misconception is that 5-year survival means that it is impossible for these patients to survive past 5 years. <span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/types/lung/cancer-survival-prognosis')">This is not true</span> - many cancer patients go on to lead happy, healthy, and full lives. 5-year survival rates are just that: a number. It is important for patients to not take too much stock in it and instead focus on their own individual case. 
+												wow
 											</p>
 										</dd>
-										
+										<dt onClick = "changeColor_three()"><a id = "third_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">What about Renter's Insurance?</a></dt>
+										<dd class="accordionItem2 accordionItemCollapsed2">
+											<p>
+												wow
+											</p>
+										</dd>
+                                        
+                                        <dt onClick = "changeColor_three()"><a id = "third_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">I'm a CFI. Can I instruct in the club aircraft?</a></dt>
+										<dd class="accordionItem2 accordionItemCollapsed2">
+											<p>
+												wow
+											</p>
+										</dd>
+                                        
+                                        <dt onClick = "changeColor_three()"><a id = "third_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">Can I review the bylaws?</a></dt>
+										<dd class="accordionItem2 accordionItemCollapsed2">
+											<p>
+												wow
+											</p>
+										</dd>
+                                        
+                                        <dt onClick = "changeColor_three()"><a id = "third_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">OK, I'm a member. How do I get a key and start scheduling the airplane?</a></dt>
+										<dd class="accordionItem2 accordionItemCollapsed2">
+											<p>
+												wow
+											</p>
+										</dd>
+                                        
+                                        <dt onClick = "changeColor_three()"><a id = "third_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">How do I start flying? What's the check-out process?</a></dt>
+										<dd class="accordionItem2 accordionItemCollapsed2">
+											<p>
+												wow
+											</p>
+										</dd>
+                                        
+                                        <dt onClick = "changeColor_three()"><a id = "third_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">I got checked out. How do I stay current?</a></dt>
+										<dd class="accordionItem2 accordionItemCollapsed2">
+											<p>
+												wow
+											</p>
+										</dd>
+                                        
+                                        <dt onClick = "changeColor_three()"><a id = "third_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">How do I get in touch with the club members?</a></dt>
+										<dd class="accordionItem2 accordionItemCollapsed2">
+											<p>
+												wow
+											</p>
+										</dd>
+                                        
+                                    
 									</dl>
 									
 								</div>
 							</span>
-            	
+						
 			<!-- End FAQ Content --> 
 			
 			
@@ -281,9 +267,16 @@
 			<br /><br /><br /><br /><br />
 			<br /><br /><br /><br /><br />
 			<br /><br /><br /><br /><br />
-        
+        </div>
 		
 		<script>
+		
+		var offset = window.pageXOffset;
+    $(window).scroll(function () {
+        if(offset != window.pageXOffset)
+            window.scrollTo(0, window.pageYOffset);
+		});
+		
 	(function($) {
 			$(window).scroll(function () {
 				if ($(this).scrollTop() > 100) {
@@ -746,6 +739,5 @@
 			});
 			
 			</script>
-            </div>
 		</body>
 		</html>

@@ -1,10 +1,12 @@
 
 /* Default Styling */
+@import url('http://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300,400,600');
 
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-	 box-sizing: border-box;
+    width: 100%;
+    overflow: none;
+  overflow-x: hidden;
+  display: block;
 }
 
 *
@@ -12,7 +14,12 @@ html, body {
 	margin:0px;
 	padding:0px;
 	font-family: 'Avenir Next W01', 'Avenir Next', 'Proxima Nova', 'Myriad Pro', Helvetica, Calibri, sans-serif;
+}
 
+#acor_style
+{
+	height:110px;
+	font-size:5px;	
 }
 
 a
@@ -73,6 +80,15 @@ a:hover
 	margin-right:10px;
 }
 
+#smaller_text
+{
+	position: relative;
+	top:-20px;
+	font-size:22px;
+	float:left;
+	font-family: 'Open Sans',sans-serif;
+}
+
 #stars_image
 {
 	position: relative;
@@ -114,6 +130,11 @@ a:hover
 
 /* Accordion */
 
+/*
+
+Reminder: Use media query to set height to auto instead of 110px after a certain min width 
+
+*/
 
 .accordion dl {
 }
@@ -129,7 +150,7 @@ a:hover
 }
 .accordion dd {
   background-color: #FFFFFF;
-  
+ 
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -155,9 +176,9 @@ a:hover
 }
 .accordionTitle:before {
   content: "+";
-  font-size: 40px;
+  font-size: 30px;
   line-height:0;
-  float: left;
+  float: right;
   -moz-transition: -moz-transform 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -312,17 +333,6 @@ a:hover
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .accordion2 dl {
 }
 
@@ -363,9 +373,9 @@ a:hover
 }
 .accordionTitle2:before {
   content: "+";
-  font-size: 40px;
+  font-size: 30px;
   line-height:0;
-  float: left;
+  float: right;
   -moz-transition: -moz-transform 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -564,9 +574,9 @@ a:hover
 }
 .accordionTitle3:before {
   content: "+";
-  font-size: 40px;
+  font-size: 30px;
   line-height:0;
-  float: left;
+  float: right;
   -moz-transition: -moz-transform 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -766,9 +776,9 @@ a:hover
 }
 .accordionTitle4:before {
   content: "+";
-  font-size: 40px;
+  font-size: 30px;
   line-height:0;
-  float: left;
+  float: right;
   -moz-transition: -moz-transform 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -968,9 +978,9 @@ a:hover
 }
 .accordionTitle5:before {
   content: "+";
-  font-size: 40px;
+  font-size: 30px;
   line-height:0;
-  float: left;
+  float: right;
   -moz-transition: -moz-transform 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -1187,6 +1197,38 @@ a:hover
 	
 }
 
+@media screen and (max-width: 1160px) {
+	
+	#info_one_repo
+	{
+		position: relative;
+		left:-50px;
+	}
+	
+	#info_two_repo
+	{
+		position: relative;
+		left:-50px;
+	}
+	
+}
+
+@media screen and (max-width: 1060px) {
+	
+	#info_one_repo
+	{
+		position: relative;
+		left:-60px;
+	}
+	
+	#info_two_repo
+	{
+		position: relative;
+		left:-60px;
+	}
+	
+}
+
 /* End Media Queries */
 
 /* Heading Images */
@@ -1216,7 +1258,6 @@ a:hover
 	height:1px;
 	width:900px;
 	left:10%;
-
 	background-color:blue;
 }
 
@@ -1314,6 +1355,10 @@ a:hover
 
 /* About Content */
 
+#about_content_wrap
+{
+	
+}
 
 #about_content
 {
@@ -1346,6 +1391,18 @@ a:hover
 
 /* Aircraft Content */
 
+#info_one_repo
+{
+	position: relative;
+	top:10px;	
+}
+
+#info_two_repo
+{
+	position: relative;
+	top:10px;	
+}
+
 #our_aircraft
 {
 	position: relative;
@@ -1365,17 +1422,12 @@ a:hover
 	margin-right:auto;
 }
 
-#aircraft_content {
-    width:100%;
-    margin-top: 700px;
-}
-
 section#plane_one{
-    width: 100%;
-    height: 450px;
+    width: 166.5%;
+    height: 600px;
     background: aqua;
     margin-top: 200px;
-    margin-left:0px;
+    margin-left:-33.5%;
 }
 
 div#one 
@@ -1402,11 +1454,11 @@ width:100%;
 
 section#plane_two 
 {
-    width: 100%;
-    height: 450px;
+    width: 166.5%;
+    height: 600px;
     background: aqua;
     margin-top: 2px;
-    margin-left: 0px;
+    margin-left: -33.5%;
 }
 
 
@@ -1431,7 +1483,7 @@ p#plane_one_info
     position: relative;
     top:10%;
     left:8%;
-    font-size: 11px;
+    font-size: 16px;
 }
 
 p#plane_two_info 
@@ -1439,14 +1491,9 @@ p#plane_two_info
     position: relative;
     top:10%;
     left:8%;
-    font-size: 11px;
+    font-size: 16px;
 }
 
-#wrap_aircraft_content {
-    width:100%;
-    margin-left: 0%;
-       
-}
 /* End Aircraft Content */
 
 /* FAQ Content */
