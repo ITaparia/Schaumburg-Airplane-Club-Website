@@ -9,6 +9,14 @@ html, body {
   display: block;
 }
 
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+}
+
 *
 {
 	margin:0px;
@@ -109,6 +117,16 @@ a:hover
 	z-index:10;
 }
 
+#stars_image_three
+{
+	position: relative;
+	top:347px;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	display:-webkit-box;
+	z-index:10;
+}
+
 #first_hr
 {
 	position: relative;
@@ -123,6 +141,13 @@ a:hover
 	width:71%;
 	top:115px;
 	left:62%;
+}
+
+.style_point
+{
+	position: relative;
+	top:3px;
+	left:-1px;
 }
 
 
@@ -1516,3 +1541,145 @@ p#plane_two_info
 }
 
 /* End FAQ Content */
+
+/* Contact Content */
+
+#contact_section
+{
+	position: relative;
+	top:340px;
+	font-size:22px;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	display:-webkit-box;
+}
+
+#contact_box
+{
+	position: relative;
+	top:370px;
+	font-size:18px;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	display:-webkit-box;
+	text-align:center;
+}
+
+
+.text_box
+{
+	border: 1px solid #A4A4A4;;
+	padding: 5px;
+	border-radius:5px;
+	width:220px;
+	height:30px;
+	color:black;
+	font-size:12px;
+}
+
+.select_box
+{
+	border: 1px solid #A4A4A4;;
+	padding: 5px;
+	border-radius:5px;
+	width:220px;
+	height:30px;
+	color:#A9A9A9;
+	font-size:12px;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.select_box:hover
+{
+	cursor:pointer;
+}
+
+.position_select
+{
+	position:relative;
+	top:7px;
+}
+
+#message
+{
+	border: 1px solid #A9A9A9;
+	border-radius:10px;
+	position: absolute;
+	top:40px;
+	width:527px;
+	height:110px;
+	left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+	padding:10px;
+}
+
+.textarea_position
+{
+	position: relative;
+	top:7px;
+	left:10px;
+	color:#A9A9A9;
+}
+
+#submit_button
+{
+	position: relative;
+	width:135px;
+	text-align:center;
+	line-height:40px;
+	border:2px solid #01A9DB;
+	color:#01A9DB;	
+	font-weight:lighter;
+	height:40px;
+	top:440px;
+    left:0;
+    right:0;
+	font-size:20px;
+    margin-left:auto;
+    margin-right:auto;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	-webkit-transition: border .4s, color .4s;
+}
+
+#submit_button:hover
+{
+	cursor:pointer;
+}
+
+#submit_button:active
+{
+	top:441px;
+}
+
+
+/* End Contact Content */
+
+/* Photo Gallery Content */
+
+
+#gallery_pos
+{
+	position: relative;
+	top:500px;
+}
+
+#photo_gallery
+{
+	position:absolute;
+	width:100px;
+}
+
+/* End Photo Gallery Content */
