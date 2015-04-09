@@ -1449,7 +1449,7 @@ Reminder: Use media query to set height to auto instead of 110px after a certain
 
 section#plane_one{
     width: 166.5%;
-    height: 600px;
+    height: 565px;
     background: aqua;
     margin-top: 200px;
     margin-left:-33.5%;
@@ -1480,7 +1480,7 @@ width:100%;
 section#plane_two 
 {
     width: 166.5%;
-    height: 600px;
+    height: 525px;
     background: aqua;
     margin-top: 2px;
     margin-left: -33.5%;
@@ -1688,16 +1688,16 @@ p#plane_two_info
 .gallery_icon
 {
   position: absolute;
-  top: 79.68%;
-  margin-left: 44%;
+  top: 109.6%;
+  margin-left: 46%;
   z-index: 1;
 }
 
 #gallery_text
 {
  position: absolute;
- top: 79.1%;
- margin-left: 36%;
+ top: 108.79%;
+ margin-left: 38%;
  z-index: 2;
  color: white;
  font-size: 24px;
@@ -1716,6 +1716,21 @@ p#plane_two_info
  top: 565px;
  color: white;
  text-align: right;
+}
+
+#position_slash_footer
+{
+ position: relative;
+ top: 20%;
+ margin-left: 2.5px;
+ margin-right: 2.5px;
+ font-size: 10px;
+}
+
+#footer_text
+{
+ position:relative;
+ margin-right: 1%;
 }
 
 /* End Footer Content */
