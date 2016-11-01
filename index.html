@@ -2,19 +2,22 @@
 	<html lang = "en">
 		<head>
 
-			<meta name="viewport" content="user-scalable=no"/>
+			<meta name="viewport" content="user-scalable=no" />
 			<script type = "text/javascript" src = "js/script.js"></script>
 			<script rel = "text/javascript" src="js/jquery-1.11.1.js"></script>
 			<script type="text/javascript" src="js/smoothscroll.js"></script>
-			
+			<meta charset="utf-8">
+            
 			<link rel = "stylesheet" href = "css/style.css" />
 			
 			<title>Schaumburg Flying Club</title>
+            
 		</head>
 		<body>
 			
+            <div id = "body_wrap">
+            
 			<!-- Heading Images -->
-			
 			<img src = "img/topPhotowithBar.jpg" id = "top_image"/>
 			<span id = "repo_image"><img src = "img/SFClogoWhite.png" id = "logo_image" /></span>
 			
@@ -28,17 +31,23 @@
 					<div id = "nav"><a href = "#our_aircraft" class = "smoothScroll">PLANES</a><span id = "position_slash">/</span></div>
 					<div id = "nav"><a href = "#faq_header" class = "smoothScroll">FAQ</a><span id = "position_slash">/</span></div>
 					<div id = "nav"><a href = "#contact_section" class = "smoothScroll">CONTACT</a><span id = "position_slash">/</span></div>
-					<div id = "nav"><a href = "#anchor_join" class = "smoothScroll">JOIN</a></div>
+                    <div id = "nav"><a href = "#contact_section" class = "smoothScroll">JOIN</a><span id = "position_slash">/</span></div>
+                    <div id = "nav"><a href = "https://goo.gl/photos/rm7nBBH4MseZFGdN7" target = "_blank" class = "smoothScroll">PHOTOS</a></div>
+                
+                </div>
+                    
 				</div>
 			</div>
-			
+        
 			<!-- End Navigation Elements -->
 			
 			<!-- Top Menu Elements -->
 			<span id = "about_content_wrap">
 				
-				<div id = "join_button">JOIN THE CLUB</div>
-				<div id = "meeting_bar"><span class = "lighten">Next Meeting</span> 7:30 MARCH 12TH <span class = "lighten">AT</span> O6C</div>
+                <a class = "smoothScroll" href = "#contact_section"><div id = "join_button">JOIN THE CLUB</div></a>
+                
+                
+				<div id = "meeting_bar" class="editable"><p><span class="lighten">Next Meeting</span> 7:30 APRIL 14TH <span class="lighten">at</span> O6C</p></div>
 				
 				<!-- End Top Menu Elements -->
 				
@@ -50,11 +59,11 @@
 					<br />
 				
 				
-					The Schaumburg Flying Club is a not-for-profit group of aviation enthusiasts who proudly own and operate two late-model Cessna aircraft.  We're based at the centrally located Schaumburg Regional Airport (06C), located just outside of Chicago, IL.   The SFC is committed to maintaining a safe fleet of aircraft at reasonable prices.  We comply with all ADs and Service Bulletins, and our members perform routine maintenance regularly.  And all of our members are fully insured under our club's policy - you won't need to pay for "renter's" insurance.  Club members can check aircraft availability and make reservations over the Internet or by telephone in just seconds. We fly for vacation, business, earning advanced ratings, or just a hamburger. We're committed to keeping a safe fleet that's affordable to fly. 
+					The Schaumburg Flying Club is a not-for-profit group of aviation enthusiasts who proudly own and operate two late-model Cessna aircraft.  We're based at the centrally located Schaumburg Regional Airport (06C), located just outside of Chicago, IL.   The SFC is committed to maintaining a safe fleet of aircraft at reasonable prices.  We comply with all ADs and Service Bulletins, and our members perform routine maintenance regularly.  As a benefit, all of our members are fully insured under our club's policy - you won't need to pay for "renter's" insurance.  Club members can check aircraft availability and make reservations over the Internet or by telephone in just seconds. We fly for vacation, business, earning advanced ratings, or just a hamburger. We're committed to keeping a safe fleet that's affordable to fly. 
 			
 					<br />
 					<br />
-					We are looking for new members.  If you're interested and want more information, <span class = "link">click here!</span>
+                    We are looking for new members.  If you're interested and want more information, <a class = "smoothScroll" href = "#faq_header"><span class = "link">click here!</span></a>
 			</span>
 			<!-- End About Content -->
 			
@@ -90,13 +99,13 @@
 		                        <br /><br />
 		                        * Two-axis KAP-140Autopilot
 		                        <br /><br />
-		                        * Reiff electric pre-heater
-		                        <br /><br />
 		                        * EDM-700 Engine Monitor
 		                        <br /><br />
 		                        * A Great IFR Cross-Country Platform!
 		                        <br /><br />
 		                        <span class = "blue">* Rate $128/hr Hobbs, wet</span>
+                                <br /><br />
+                                <a  href = "img/panel1.jpeg" target = "_blank"><span class = "blue">Click here to view the interior</span></a>
 	                    	</p>
 					</span>
                 </div>
@@ -114,7 +123,7 @@
 	                        <br /><br />
 	                        <span class="darken">172S (N309SP)</span>
 	                        <br /><br /><br />
-	                        * 1243KTAS at 8,500
+	                        * 124KTAS at 8,500
 	                        <br /><br />
 	                        * 920 lb. useful load
 	                        <br /><br />
@@ -126,11 +135,11 @@
 	                        <br /><br />
 	                        * Single-axis KAP-140Autopilot
 	                        <br /><br />
-	                        * Electric pre-heater
-	                        <br /><br />
 	                        * EDM-700 Engine Monitor
 	                        <br /><br />
 	                        <span class = "blue">* Rate $104/hr Hobbs, wet</span>
+                            <br /><br />
+                            <a  href = "img/panel2.jpeg" target = "_blank"><span class = "blue">Click here to view the interior</span></a>
 	                    </p>
 					</span>
                 </div>
@@ -151,27 +160,26 @@
 			
 			<div class="accordion">
 									<dl>
-										<dt onClick = "changeColor_one()"><a class="accordionTitle" href="#" id = "first_acor" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">What should I know before I join?</a></dt>
+										<dt onclick = "changeColor_one()"><a class="accordionTitle" href="#" id = "first_acor" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">What should I know before I join?</a></dt>
 										<dd class="accordionItem accordionItemCollapsed">
 											<p>
 												If you're interested in the details of club membership, you're encouraged to read our club bylaws. If you have difficulty with the PDF version of the bylaws, please contact a board member listed below to receive a copy in a different format.
 												<br />
 												<br />
 												Financial information, our insurance policy, and maintenance logs are also available at any of our monthly meetings. Meetings are held at the Schaumburg Airport on the 2nd Thursday of each month at 7:30PM.  We encourage prospective members to attend our monthly meetings.
-													
-	
-		 
+                                                
+                                                
 									</p>
 									</dd>
 										
-										<dt onClick = "changeColor_two()"><a class="accordionTitle" href="#" id = "2nd_acor" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">Are there any minimum time requirements to join?</a></dt>
+										<dt onclick = "changeColor_two()"><a class="accordionTitle" href="#" id = "2nd_acor" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">Are there any minimum time requirements to join?</a></dt>
 										<dd class="accordionItem accordionItemCollapsed">
 											<p>
-												We are actively looking for new members who have at least a Private Pilot's Certificate. There are no minimums but we will have you go with a club approved instructor to demonstrate that you know what you're doing. You don't need to have a high-performance endorsement before joining, but you'll need one before flying the 182 solo.
+												We are actively looking for new members who have at least a Private Pilot's Certificate. There are no minimums but we will have you fly with a club approved instructor to demonstrate that you know what you're doing. You don't need to have a high-performance endorsement before joining, but you'll need one before flying the 182 solo.
 											</p>
 										</dd>
 										
-											<dt onClick = "changeColor_three()"><a id = "second_acor" class="accordionTitle" href="#" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">What does it cost?</a></dt>
+											<dt onclick = "changeColor_three()"><a id = "second_acor" class="accordionTitle" href="#" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">What does it cost?</a></dt>
 										<dd class="accordionItem accordionItemCollapsed">
 											<p>
 												<span class = "style_point">*</span>Equity Investment - Each member purchases a $3,500 equity share when they join. The investment is returned to a departing member upon his or her replacement.<br /><br />
@@ -187,91 +195,91 @@
 									</div>
 								<div class="accordion2">
 									<dl>
-										<dt onClick = "changeColor_four()"><a id = "third_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">How do I join?</a></dt>
+										<dt onclick = "changeColor_four()"><a id = "third_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">How do I join?</a></dt>
 										<dd class="accordionItem2 accordionItemCollapsed2">
 											<p>
-												To join the club, please fill out an application, which can be found here. For insurance purposes, we will also need a copy of your pilot's certificate, medical certificate, the last page of your logbook, and a copy of your high performance endorsement if you already have one.
+												To join the club, please fill out an application, which can be found <span class = "link" onClick = "window.open('SFC_Application.pdf')">here</span>. For insurance purposes, we will also need a copy of your pilot's certificate, medical certificate, the last page of your logbook, and a copy of your high performance endorsement if you already have one.
 													<br />
 													<br />
 												You're strongly encouraged to attend a club meeting prior to joining.  Bring the information above, along with your equity investment of $3,500.  This can also be mailed to:
 													<br />
 													<br />
 												Schaumburg Flying Club<br />
-												P.O. Box 1156<br />
-												Palatine, IL 60078
+												1472 Blue Heron Dr<br />
+												Crystal Lake, IL 60014
 											</p>
 										</dd>
-										<dt onClick = "changeColor_five()"><a id = "fourth_acor" href="#memes" class="accordionTitle2" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">When are the meetings?</a></dt>
+										<dt onclick = "changeColor_five()"><a id = "fourth_acor" href="#memes" class="accordionTitle2" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">When are the meetings?</a></dt>
 										<dd class="accordionItem2 accordionItemCollapsed2">
 											<p>
 												Meetings are held at the Schaumburg Airport on the 2nd Thursday of each month at 7:30PM. We meet in the meeting room in the basement, but you can usually find some of us in the restaurant upstairs before and/or after the meetings.
 											</p>
 										</dd>
-										<dt onClick = "changeColor_six()"><a id = "fifth_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">What about Renter's Insurance?</a></dt>
+										<dt onclick = "changeColor_six()"><a id = "fifth_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">What about Renter's Insurance?</a></dt>
 										<dd class="accordionItem2 accordionItemCollapsed2">
 											<p>
-												Members are "named insured" - you're fully covered when flying club aircraft. 
+												Members (co-owners) are "named insured" - you're fully covered when flying club aircraft. 
 											</p>
 										</dd>
                                         
-                                        <dt onClick = "changeColor_seven()"><a id = "sixth_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">I'm a CFI. Can I instruct in the club aircraft?</a></dt>
+                                        <dt onclick = "changeColor_seven()"><a id = "sixth_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">I'm a CFI. Can I instruct in the club aircraft?</a></dt>
 										<dd class="accordionItem2 accordionItemCollapsed2">
 											<p>
 												The club is not for profit and is not in the business of providing instruction. Since our members can hire any CFI they want for their own instruction, members could hire CFI's who happen to be members. Members who are CFI's can not, however, teach non-members in the club aircraft. Club insurance does not cover persons acting as a CFI.
 											</p>
 										</dd>
                                         
-                                        <dt onClick = "changeColor_eight()"><a id = "seventh_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">Can I review the bylaws?</a></dt>
+                                        <dt onclick = "changeColor_eight()"><a id = "seventh_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">Can I review the bylaws?</a></dt>
 										<dd class="accordionItem2 accordionItemCollapsed2">
 											<p>
-												Sure. We have them online <span class = "link" onClick = "window.open('http://members.schaumburgflyingclub.com/files/SFC_Bylaws.pdf')">here</span>.
+												Sure. We have them online <span class = "link" onclick = "window.open('Bylaws.pdf')">here</span>.
 											</p>
 										</dd>
                                         
-                                        <dt onClick = "changeColor_nine()"><a id = "eigth_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">OK, I'm a member. How do I get a key and start scheduling the airplane?</a></dt>
+                                        <dt onclick = "changeColor_nine()"><a id = "eigth_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">OK, I'm a member. How do I get a key and start scheduling the airplane?</a></dt>
 										<dd class="accordionItem2 accordionItemCollapsed2">
 											<p>
-												Once our club treasurer has received your check and required documents, we will provide keys to the club's aircraft. A user ID and password will also be provided for our 24/7 scheduling system at <span class = "link" onClick = window.open("http://www.schedulemaster.com")>www.schedulemaster.com</span>.
+												Once our club treasurer has received your check and required documents, we will provide keys to the club's aircraft. A user ID and password will also be provided for our 24/7 scheduling system at <span class = "link" onclick = window.open("http://www.schedulemaster.com")>www.schedulemaster.com</span>.
 											</p>
 										</dd>
                                         
-                                        <dt onClick = "changeColor_ten()"><a id = "ninth_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">How do I start flying? What's the check-out process?</a></dt>
+                                        <dt onclick = "changeColor_ten()"><a id = "ninth_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">How do I start flying? What's the check-out process?</a></dt>
 										<dd class="accordionItem2 accordionItemCollapsed2">
 											<p>
 												Depending on your experience, our insurance requires either 5 or 10 hours in type prior to solo. You can accumulate this time with an instructor in our aircraft after joining the club. You can also use the club aircraft to obtain a high performance endorsement if you do not yet have one.
 
-												Due to liability concerns and insurance limitations, the Club cannot provide instructors. However, the following instructors have worked with our Club members before:
+												Due to liability concerns and insurance limitations, the Club cannot provide instructors. However, the instructor below can work with club members:
 												<br />
 												<br />
-												<span class = "style_point">*</span>Bob Bos. Bob is a club member, CFII/MEII/FE/ATP, and a retired pilot for United. Contact Bob at 847-364-7232 or <span class = "link" onClick = " window.location.href = 'mailto:bobcaf55@aol.com'">bobcaf55@aol.com</span>.
-												<br />
-												<br />
-												<span class = "style_point">*</span>Mike Miley. Mike is a CFII.
-												<br />
-												<br />
-												<span class = "style_point">*</span>Keith Klampert. Keith is a CFII from DuPage who has worked with some of our members in the past. You can reach Keith at home at 630-872-8209, via cell phone at 630-400-2788 or at <span class = "link" onClick = " window.location.href = 'mailto:kckcfii@aol.com'">kckcfii@aol.com</span>.
+												<span class = "style_point">*</span>Joe Standley CFI, CFII. Contact Joe at 815-558-7033 or <span class = "link" onclick = " window.location.href = 'mailto:joestandleycfii@gmail.com'">joestandleycfii@gmail.com</span>.
+												
 												<br />
 												<br />
 												If you elect to use a different instructor, please discuss your choice with a member of the board before flying with them. Once you have flown with any of these instructors and have been signed off, please schedule a flight with Norb Paprocki or Jeff Puglielli. This flight time can be used to answer any questions you might have about the club and it will give one of the club's board members an opportunity to discuss GPS usage, mixture management, and club rules and regulations.
 											</p>
 										</dd>
                                         
-                                        <dt onClick = "changeColor_eleven()"><a id = "tenth_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">I got checked out. How do I stay current?</a></dt>
+                                        <dt onclick = "changeColor_eleven()"><a id = "tenth_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">I got checked out. How do I stay current?</a></dt>
 										<dd class="accordionItem2 accordionItemCollapsed2">
 											<p>
-												You must fly either of our aircraft every sixty days to remain current. To fly at night, you must have flown either aircraft at night within the past 60 days. From an avionics perspective, you can try to stay current with the KLN-89B GPS by reading the manual here. You can find the KAP140 autopilot manual here.
+												You must fly either of our aircraft every sixty days to remain current. To fly at night, you must have flown either aircraft at night within the past 60 days. 
+                                                <br />
+                                                <br />
+										
+                                                
+                                    From an avionics perspective, you can try to stay current with the KLN-89B GPS by reading the manual <span class = "blue note" onclick = "window.open('kln89b.pdf')">here</span>. You can find the KAP140 autopilot manual <span class = "blue note" onclick = "window.open('kap140.pdf')">here</span>. You can find the EDM EDM700 engine monitor manual <span class = "blue note" onClick = "window.open('EDM700.pdf')">here</span>. 
 											</p>
 										</dd>
                                         
-                                        <dt onClick = "changeColor_twelve()"><a id = "eleventh_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">How do I get in touch with the club members?</a></dt>
+                                        <dt onclick = "changeColor_twelve()"><a id = "eleventh_acor" class="accordionTitle2" href="#memes" style = "background-color: #00ADF7;font-size:22px;font-family: 'Open Sans',sans-serif;font-weight:lighter;">How do I get in touch with the club members?</a></dt>
 										<dd class="accordionItem2 accordionItemCollapsed2">
 											<p>
 												For questions about membership, please contact one of the following board members:
 												<br />
 												<br />
-												Chad Christenson - President [708-287-7755]
+												Angus Watson - President [847-797-8727]
 												<br />
-												Angus Watson - Vice President [847-797-8727]
+												Ken Jarosch - Vice President [847-437-1234]
 												<br />
 												Don Segreti - Secretary [630-830-1938]
 												<br />
@@ -298,33 +306,37 @@
 			
 			<hr id = "first_hr" style = "top:352px;"/> <span id = "contact_section">CONTACT US</span> <hr id = "second_hr" style = "top:320px;" />
 			<span id = "stars_image_three"><img src = "img/stars.png" /></span>
-		
-			<div id = "contact_box">
+		    
+            <form action="//formspree.io/skiwoods@hotmail.com"
+      method="POST">
+                <div id = "contact_box">
 				
-				<input type = "text" id = "first_name" class = "text_box" placeholder = "FIRST NAME"  /><br /><br />
-				<input type = "text" id = "second_name" class = "text_box" placeholder = "LAST NAME" /><br /><br />
-				<input type = "text" id = "email" class = "text_box" placeholder = "EMAIL" /><br /><br />
-				<input type = "text" id = "phone" class = "text_box" placeholder = "PHONE NUMBER" /><br /><br />
+				    <input type = "text" id = "first_name" class = "text_box" name = "first name" placeholder = "FIRST NAME" required data-validation-required-message="Please enter your first name."/><br /><br />
+				    <input type = "text" id = "second_name" class = "text_box" name = "second name" placeholder = "LAST NAME" required data-validation-required-message="Please enter your last name."/><br /><br />
+				    <input type = "text" id = "email" class = "text_box" name = "email" placeholder = "EMAIL" required data-validation-required-message="Please enter your email."/><br /><br />
+				    <input type = "text" id = "phone" class = "text_box" name = "phone number" placeholder = "PHONE NUMBER" required data-validation-required-message="Please enter your phone number."/><br /><br />
 				
 			
-				<textarea id = "message" placeholder = "MESSAGE" maxlength = "2000" style = "position:relative;left:7px;"></textarea>
-			</div>
-			
-			<div id = "submit_button">SEND</div>
-	
+				    <textarea id = "message" name = "message" placeholder = "MESSAGE" maxlength = "2000" style = "position:relative;left:7px;" required data-validation-required-message="Please enter your message."></textarea>
+			    </div>
+                
+			    <button id = "submit_button" type="submit">SEND</button>
+            </form>
 			<!-- End Contact Content -->
 			
 			<!-- Photo Gallery Content -->
 				
-			<span id = "gallery_pos">
+			<a href = "https://goo.gl/photos/rm7nBBH4MseZFGdN7" target = "_blank"><span id = "gallery_pos" >
 
 				<img class = "bg" src="img/galleryPhoto.jpg"/>
                 
 				
 			</span>
+           
             
-            <img class = "gallery_icon" src="img/galleryIcon.png"/>
+            <img class = "gallery_icon" src="img/galleryIcon.png" /></a>
             <div id = "gallery_text">PHOTO GALLERY</div>
+            </a>
             
 			<!-- End Photo Gallery Content -->
 			
@@ -336,7 +348,8 @@
                 <a style = "position:relative; font-size:10px; top:20%;" href = "#our_aircraft" class = "smoothScroll"><b>PLANES</b></a><span id = "position_slash_footer"> /</span>
                     <a style = "position:relative; font-size:10px; top:20%;" href = "#faq_header" class = "smoothScroll"><b>FAQ</b></a><span id = "position_slash_footer"> /</span>
                     <a style = "position:relative; font-size:10px; top:20%;" href = "#contact_section" class = "smoothScroll"><b>CONTACT</b></a><span id ="position_slash_footer"> /</span>
-                    <a style = "position:relative; font-size:10px; top:20%;" href = "http://www.pornhub.com" class = "smoothScroll"><b>JOIN</b></a>
+                    <a style = "position:relative; font-size:10px; top:20%;" href = "#contact_section" class = "smoothScroll"><b>JOIN</b></a><span id ="position_slash_footer"> /</span>
+                <a href = "https://goo.gl/photos/rm7nBBH4MseZFGdN7" target = "_blank" style = "position:relative; font-size:10px; top:20%;" "#contact_section" class ="smoothScroll"><b>PHOTOS</b></a>
             </span>
             </div>
             
@@ -345,28 +358,7 @@
 		
 		<script>
 		
-		var offset = window.pageXOffset;
-    $(window).scroll(function () {
-        if(offset != window.pageXOffset)
-            window.scrollTo(0, window.pageYOffset);
-		});
-		
-	(function($) {
-			$(window).scroll(function () {
-				if ($(this).scrollTop() > 100) {
-					$('.scrollup').fadeIn();
-				} else {
-					$('.scrollup').fadeOut();
-				}		
-			});
 
-			$('.scrollup').click(function () {
-				$("html, body").animate({
-					scrollTop: 0
-				}, 600);
-				return false;
-			});
-		})(jQuery);
 		
 	
 		
@@ -813,5 +805,10 @@
 			});
 			
 			</script>
+            
+            <!-- Contact Form JavaScript -->
+            <script src="js/jqBootstrapValidation.js"></script>
+            <script src="js/contact_me.js"></script>
+            </div>
 		</body>
 		</html>

@@ -179,3 +179,8 @@ function changeColor_twelve()
 		color_twelve = false;
 	}
 }
+
+function randomGallery()
+{
+    window.location = "https://picasaweb.google.com/105371466358361636278/"   
+}
